@@ -18,7 +18,11 @@ namespace JumpTool
             Environment.Exit( 1 );
          }
 
-         if ( args[0].ToLower() == "pack" )
+         if ( args[0].ToLower() == "build" )
+         {
+            Build();
+         }
+         else if ( args[0].ToLower() == "pack" )
          {
             Pack();
          }
@@ -29,6 +33,11 @@ namespace JumpTool
          }
 
          Environment.Exit( 1 );
+      }
+
+      private static void Build()
+      {
+      
       }
 
       private static void Pack()
